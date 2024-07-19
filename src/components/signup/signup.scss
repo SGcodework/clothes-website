@@ -1,0 +1,71 @@
+@import "../../styles/index.scss";
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+
+  .heading {
+    font-size: 45px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: var(--theme-pink-text);
+
+    @media (max-width: 576px) {
+      font-size: 35px;
+    }
+  }
+
+  .sub-heading {
+    font-size: 25px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: var(--theme-gray-600-text);
+
+    @media (max-width: 576px) {
+      font-size: 20px;
+    }
+  }
+
+  .form {
+    width: 500px;
+    margin: 0 auto;
+
+    @media (max-width: 576px) {
+      width: 300px;
+    }
+
+    form {
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+    }
+    .button {
+      padding: 10px 20px;
+      background-color: var(--theme-pink-background);
+      color: var(--theme-white-text);
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 50px;
+      cursor: pointer;
+      font-size: 20px;
+      width: 100%;
+    }
+  }
+  .bottom-text {
+    color: var(--theme-gray-600-text);
+
+    span {
+      color: var(--theme-pink-text);
+      cursor: pointer;
+    }
+  }
+}

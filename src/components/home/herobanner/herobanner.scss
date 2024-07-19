@@ -1,0 +1,46 @@
+@import "../../../styles/index.scss";
+
+.herobanner {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url(../../../assets/images/herobanner.webp);
+  width: 100%;
+  height: calc(100vh - 90px);
+  background-position: right bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (max-width: 420px) {
+    height: calc(100vh - 80px);
+  }
+
+  .container {
+    height: 100%;
+
+    .herobanner__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      height: 100%;
+
+      h1 {
+        font-size: 60px;
+        color: var(--theme-white-text);
+        font-weight: 200;
+        text-transform: uppercase;
+        text-align: right;
+      }
+
+      p {
+        font-size: 50px;
+        color: var(--theme-white-text);
+        font-weight: 500;
+        text-align: right;
+      }
+    }
+  }
+}
